@@ -1,0 +1,77 @@
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+.main {
+  display: block;
+}
+.card {
+	background: white;
+	margin-bottom: 2em;	
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h6 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+/* Flexbox stuff */
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+	flex: 0 1 24%;
+}
+
+.pagination {
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination__btn {
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 50%;
+	margin: 0 7px;
+	outline: none;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.pagination__btn-active {
+	background-color: #408AD2;
+	color: #fff;
+}
+
+.pagination__btn-active {
+	background-color: #408AD2;
+	color: #fff;
+}

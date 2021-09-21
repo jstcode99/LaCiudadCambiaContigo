@@ -1,6 +1,7 @@
 var data;
 var currentPage = 1;
-var recordsPerPage = 6;
+var recordsPerPage = 8;
+var cuter = 4;
 
 function getData() {
   $.getJSON('data.json',function(response){
@@ -27,33 +28,36 @@ function nextPage(){
 
 function appendRow(div) {
   var div = document.createElement("div");
-  div.classList.add('w3-row-padding');
+  div.classList.add('cards');
   return div
   // Append the new elements
 }
 
 function appendCard(data) {
-  var divCard = document.createElement("div");
-  var classNames = ['w3-third', 'w3-container', 'w3-margin-bottom'];
+  var divCard = document.createElement("article");
+  var classNames = ['card'];
   classNames.forEach(className => {
     divCard.classList.add(className);
   });
   
-
+  var picture = document.createElement("picture");
+  picture.classList.add('thumbnail');
   var img = document.createElement("img");
   img.classList.add('w3-row-padding');
   img.style.width = '100%';
+  img.style.height = '250px';
   img.src = data.url
-  divCard.append(img);
+  picture.append(img);
+  divCard.append(picture);
 
   var divCardContainer = document.createElement("div");
-  var classNames2 = ['w3-container', 'w3-white'];
+  var classNames2 = ['card-content'];
   classNames2.forEach(className => {
     divCardContainer.classList.add(className);
   });
   divCard.append(divCardContainer);
 
-  var title = document.createElement("p");
+  var title = document.createElement("h6");
   title.innerText = data.title;
   divCardContainer.append(title);
   var decription = document.createElement("p");
@@ -63,10 +67,10 @@ function appendCard(data) {
 }
 
 function changePage(page){
+  document.getElementById('currentPage').textContent = currentPage + '/' + data.length
   var btnNext = document.getElementById("btnNext");
   var btnPrev = document.getElementById("btnPrev");
   var listingContent = document.getElementById("list-content");
-  let cuter = 3;
   let counterCuter = 0;
   // Validate page
   if (page < 1) page = 1;
