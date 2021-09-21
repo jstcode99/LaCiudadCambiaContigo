@@ -1,8 +1,8 @@
 :root {
 	/* Theme */
-	--primary-color: #1662f3;
+	--primary-color: #00B7FF;
 	--light-color: #d0dffc;
-	--dark-color: #283b70;
+	--dark-color: #2B5AC4;
 	--regular-font: 'Inter', sans-serif;
 }
 
@@ -28,7 +28,7 @@
 		box-shadow 250ms ease;
 }
 
-.tag>a {
+.tag > a {
 	display: inline-block;
 	position: relative;
 	color: var(--dark-color);
@@ -36,7 +36,7 @@
 	padding: .5rem 1rem .5rem 2rem;
 }
 
-.tag>a::before {
+.tag > a::before {
 	content: "";
 	position: absolute;
 	top: 50%;

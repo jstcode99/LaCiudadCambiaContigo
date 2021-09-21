@@ -1,77 +1,76 @@
-img {
-	display: block;
-	border: 0;
-	width: 100%;
-	height: auto;
-}
-.main {
-  display: block;
-}
-.card {
-	background: white;
-	margin-bottom: 2em;	
-}
-
-.card a {
-	color: black;
-	text-decoration: none;
-}
-
-.card a:hover {
-	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
-}
-
-.card-content {
-	padding: 1.4em;
-}
-
-.card-content h6 {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: bold;
-}
-
-.card-content p {
-	font-size: 80%;
-}
-
-/* Flexbox stuff */
-
-.cards {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .card {
-	flex: 0 1 24%;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
-.pagination {
-	margin-top: 10px;
-	width: 100%;
+.card-item {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	width: 100%;
+	border-radius: 6px;
+	box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+	overflow: hidden;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
 }
 
-.pagination__btn {
-	border: 1px solid #ddd;
-	background: #fff;
-	border-radius: 50%;
-	margin: 0 7px;
-	outline: none;
-	width: 30px;
-	height: 30px;
+@media(min-width: 40rem) {
+	.card {
+		width: 50%;
+	}
+}
+@media(min-width: 56rem) {
+	.card {
+		width: 33.3%;
+	}
+}
+.card-item:hover {
 	cursor: pointer;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.card-item, .card-image :hover{
+	opacity: 1;
 }
 
-.pagination__btn-active {
-	background-color: #408AD2;
-	color: #fff;
+.card-info {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 1rem;
+	line-height: 1.5em;
 }
 
-.pagination__btn-active {
-	background-color: #408AD2;
-	color: #fff;
+.card-title {
+	font-size: 25px;
+	line-height: 1.1em;
+	color: #32325d;
+	margin-bottom: 0.2em;
+}
+
+card-category {
+
+}
+.card-image{
+	height: 200px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 6px 6px 0px 0px;
+	opacity: 0.91;
 }

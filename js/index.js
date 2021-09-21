@@ -1,7 +1,7 @@
 var data;
 var currentPage = 1;
-var recordsPerPage = 8;
-var cuter = 4;
+var recordsPerPage = 6;
+var cuter = 3;
 
 function getData() {
   $.getJSON('data.json',function(response){
@@ -28,41 +28,52 @@ function nextPage(){
 
 function appendRow(div) {
   var div = document.createElement("div");
-  div.classList.add('cards');
+  div.classList.add('container');
   return div
   // Append the new elements
 }
 
 function appendCard(data) {
-  var divCard = document.createElement("article");
+  var divCard = document.createElement("div");
   var classNames = ['card'];
   classNames.forEach(className => {
     divCard.classList.add(className);
   });
-  
-  var picture = document.createElement("picture");
-  picture.classList.add('thumbnail');
-  var img = document.createElement("img");
-  img.classList.add('w3-row-padding');
-  img.style.width = '100%';
-  img.style.height = '250px';
-  img.src = data.url
-  picture.append(img);
-  divCard.append(picture);
 
-  var divCardContainer = document.createElement("div");
-  var classNames2 = ['card-content'];
+  var divCardItem = document.createElement("div");
+  divCardItem.classList.add('card-item');
+
+  var divCardImg = document.createElement("div");
+  divCardImg.classList.add('card-image');
+  divCardImg.style.backgroundImage = "url(__URL__)".replace('__URL__', data.url);
+  divCardItem.append(divCardImg);
+
+
+
+  var divCardInfo = document.createElement("div");
+  var classNames2 = ['card-info'];
   classNames2.forEach(className => {
-    divCardContainer.classList.add(className);
+    divCardInfo.classList.add(className);
   });
-  divCard.append(divCardContainer);
-
-  var title = document.createElement("h6");
+  var title = document.createElement("h2");
+  title.classList.add('card-title');
   title.innerText = data.title;
-  divCardContainer.append(title);
+  divCardInfo.append(title);
+
+  var category = document.createElement("small");
+  category.classList.add('card-category');
+  category.innerText = data.idCategory;
+  divCardInfo.append(category);
+
   var decription = document.createElement("p");
-  divCardContainer.append(decription);
+  title.classList.add('card-title');
   decription.innerText = data.description;
+  divCardInfo.append(decription);
+
+  divCardItem.append(divCardInfo);
+
+  divCard.append(divCardItem);
+
   return divCard;
 }
 
