@@ -1,11 +1,3 @@
-:root {
-	/* Theme */
-	--primary-color: #00B7FF;
-	--light-color: #d0dffc;
-	--dark-color: #2B5AC4;
-	--regular-font: 'Inter', sans-serif;
-}
-
 .tags {
 	margin: 0;
 	padding: 0;

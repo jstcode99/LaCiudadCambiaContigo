@@ -1,4 +1,4 @@
-.container {
+.container-cards {
   display: flex;
   -webkit-display: box;
   -moz-display: box;
@@ -9,14 +9,14 @@
   margin: 0;
 }
 
-.card {
+.card-app {
   display: flex;
   padding: 1rem;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.card-item {
+.card-app-item {
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
@@ -29,25 +29,25 @@
 }
 
 @media(min-width: 40rem) {
-	.card {
+	.card-app {
 		width: 50%;
 	}
 }
 @media(min-width: 56rem) {
-	.card {
+	.card-app {
 		width: 25%;
 	}
 }
-.card-item:hover {
+.card-app-item:hover {
 	cursor: pointer;
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 }
-.card-item, .card-image :hover{
+.card-app-item, .card-app-image :hover{
 	opacity: 1;
 }
 
-.card-info {
+.card-app-info {
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
@@ -59,17 +59,18 @@
 	line-height: 1.5em;
 }
 
-.card-title {
+.card-app-title {
 	font-size: 18px;
 	line-height: 1.1em;
-	color: #32325d;
+	color: #000000;
 	margin-bottom: 0.2em;
 }
 
-card-category {
+card-app-category {
 
 }
-.card-image{
+
+.card-app-image{
 	height: 150px;
 	overflow: hidden;
 	background-size: cover;

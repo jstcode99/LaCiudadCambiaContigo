@@ -1,9 +1,18 @@
-
+:root {
+	/* Theme */
+	--primary-color: #2B5AC4;
+	--dark-color: #2B5AC4;
+	--light-color: #d0dffc;
+  --blue-color: #2B5AC4;
+  --blue-light-color: #00B7FF;
+  --green-color: #00D986;
+	--regular-font: 'quicksand', sans-serif;
+}
 html {
   background-color: #f8f8f8;
 }
 body, *{
-  font-family: "quicksand", sans-serif;
+  font-family: var(--regular-font);
 }
 * {
   margin: 0;
