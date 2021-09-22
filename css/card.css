@@ -35,7 +35,7 @@
 }
 @media(min-width: 56rem) {
 	.card {
-		width: 33.3%;
+		width: 25%;
 	}
 }
 .card-item:hover {
@@ -52,11 +52,15 @@
 	flex: 1 1 auto;
 	flex-direction: column;
 	padding: 1rem;
+	white-space: nowrap;
+  overflow: hidden;
+	max-width: 90%;
+  text-overflow: ellipsis;
 	line-height: 1.5em;
 }
 
 .card-title {
-	font-size: 25px;
+	font-size: 18px;
 	line-height: 1.1em;
 	color: #32325d;
 	margin-bottom: 0.2em;
@@ -66,7 +70,7 @@ card-category {
 
 }
 .card-image{
-	height: 200px;
+	height: 150px;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;

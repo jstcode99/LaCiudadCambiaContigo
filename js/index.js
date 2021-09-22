@@ -1,7 +1,7 @@
 var data;
 var currentPage = 1;
-var recordsPerPage = 6;
-var cuter = 3;
+var recordsPerPage = 8;
+var cuter = 4;
 
 function getData() {
   $.getJSON('data.json',function(response){
