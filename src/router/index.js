@@ -8,13 +8,13 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: '/:category?',
+    name: 'home',
     component: Home
   },
   {
     path: '/video/:id',
-    name: 'Video',
+    name: 'video',
     component: Video
   },
   {

@@ -8,7 +8,7 @@
         <b-icon icon="play-fill"></b-icon>
       </a>
       <a :href="`/video/${video.id}`">
-        <video class="video" width="319px" :height="height">
+        <video class="video" width="100%" height="100%">
           <source :src="video.src" type="video/mp4">
         </video>
       </a>

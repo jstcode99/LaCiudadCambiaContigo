@@ -1,5 +1,10 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="dark">
+  <b-navbar
+    toggleable="lg"
+    class="navbar-shadow"
+    type="light"
+    variant="light"
+  >
     <b-navbar-brand to="/">
       <img :src="require('@/assets/img/logo.png')" height="35px" class="mb-1"/>
     </b-navbar-brand>
@@ -8,18 +13,18 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item to="/">Inicio</b-nav-item>
-        <b-nav-form>
-          <b-form-input class="mr-sm-2" placeholder="Search"></b-form-input>
-        </b-nav-form>
+        <SearchBar></SearchBar>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
 
 <script>
+import SearchBar from './Categorys/SearchBar'
 import store from '@/store'
 
 export default {
+  components: { SearchBar },
   name: "Navbar",
   props: {
     title: String,
@@ -35,3 +40,9 @@ export default {
   }
 };
 </script>
+<style>
+.navbar-shadow {
+  -webkit-box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+  box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+}
+</style>

@@ -27,6 +27,10 @@ export default {
   created() {
     this.videos = store.getters.videos
     this.categorys = store.getters.categorys
+    if(this.$route.params.category) {
+      this.videos = this.videos.filter(video => video.idCategory === parseInt(this.$route.params.category, 10))
+      console.log(this.videos, 'this.videos');
+    }
   }
 }
 </script>

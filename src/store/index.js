@@ -7,6 +7,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    overlay: false,
     videos: videosJson,
     categorys: categorysJson,
   },
@@ -15,7 +16,13 @@ export default new Vuex.Store({
     categorys: state => state.categorys,
     getcategoryById: (state) => (id) => {
       return state.categorys.find(category => category.id === id)
+    },
+    overlay: state => state.overlay,
+  },
+  mutations: {
+    toggleOverlay (state) {
+      // mutate state
+      state.overlay = !state.overlay
     }
   },
-  modules: {},
 })

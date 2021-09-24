@@ -2,7 +2,7 @@
   <div class="top-category section-padding mb-4">
     <div class="row">
       <div class="col-md-12">
-        <h6>Categorias</h6>
+        <h6 class="text-dark">Categorias</h6>
         <div
           class="swiper"
           ref="swiper"
@@ -74,7 +74,11 @@ export default {
       this.element.forEach(element => {
         this.sliderWidth += element.clientWidth + 1;
       });
-      this.width = this.sliderWidth
+      if(this.totalWidth > this.sliderWidth) {
+        this.width = this.totalWidth
+      } else {
+        this.width = this.sliderWidth
+      }
     }
   },
   computed: {

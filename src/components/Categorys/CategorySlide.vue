@@ -1,6 +1,6 @@
 <template>
   <li ref="itemCategory">
-    <a :href="`link/${category.id}`">
+    <a :href="`/${category.id}`">
       {{ category.title }}
     </a>
   </li>

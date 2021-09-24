@@ -3,7 +3,7 @@
     <div class="video-block-right-list section-padding">
       <div class="row mb-4">
         <b-col
-          class="col-md-8"
+          class="col-md-8  col-sm-12"
           align-self="baseline"
         >
           <div class="single-video" v-if="video">
@@ -15,7 +15,7 @@
           <SingleVideoInfo :video="video" />
         </b-col>
         <b-col
-          class="col-md-4"
+          class="col-md-4 col-sm-12"
           align-self="stretch"
         >
           <div class="video-slider-right-list">
