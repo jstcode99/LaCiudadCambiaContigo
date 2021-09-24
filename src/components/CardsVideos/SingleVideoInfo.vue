@@ -2,7 +2,7 @@
   <div class="single-video-left">
     <div class="single-video-title box mb-3">
       <h2 class="text-dark">
-        <strong>Contrary to popular belief, Lorem Ipsum (2019) is not.</strong>
+        <strong>{{ video.title }}</strong>
       </h2>
       <p class="mb-0 h6">
         <b-icon
@@ -10,20 +10,20 @@
           size="52"
           icon="eye"
         />
-        2,729,347
+        {{ video.vistas }}
         •
         <b-icon
           class="text-dark"
           size="52"
           icon="heart"
         />
-        2,729,347
+        {{ video.likes }}
       </p>
     </div>
     <div class="single-video-author box mb-3">
       <img class="img-fluid" src="img/s4.png" alt="" />
       <p>
-        <strong class="text-dark">Osahan Channel</strong>
+        <strong class="text-dark">{{ video.autor.name }}</strong>
         <span
           title=""
           data-placement="top"
@@ -32,17 +32,14 @@
           ><i class="fas fa-check-circle text-success"></i
         ></span>
       </p>
-      <small>Published on Aug 10, 2018</small>
+      <small>Publicado {{ video.date }}</small>
     </div>
     <div class="single-video-info-content box mb-3">
-      <h6 class="text-dark">Categoria</h6>
+      <h6 class="text-dark">{{ video.category.title }}</h6>
       <p>Gaming , PS4 Exclusive , Gameplay , 1080p</p>
       <h6 class="text-dark">Descripcion</h6>
       <p>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as evolved over the years, sometimes
+        {{ video.description }}
       </p>
       <!-- <h6>Tags :</h6>
       <p class="tags mb-0">
@@ -64,9 +61,8 @@ export default {
     // CardsVideos,
     // CategorysSlide,
   },
-  data() {
-    return {};
+  props: {
+    video: Object,
   },
-  created() {},
 };
 </script>

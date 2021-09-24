@@ -6,10 +6,13 @@
           class="col-md-8"
           align-self="baseline"
         >
-          <div class="single-video">
-            <iframe width="100%" height="615" src="https://www.youtube-nocookie.com/embed/8LWZSGNjuF0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="single-video" v-if="video">
+            <video class="video" width="100%" height="615" controls>
+              <source :src="video.src" type="video/mp4">
+              <!-- <source src="@/assets/videos/21-05-20 DON DANIEL.mp4" type="video/mp4" > -->
+            </video>
           </div>
-          <SingleVideoInfo />
+          <SingleVideoInfo :video="video" />
         </b-col>
         <b-col
           class="col-md-4"
@@ -18,7 +21,7 @@
           <div class="video-slider-right-list">
             <h6 class="m-2 text-dark">Videos relacionado</h6>
             <CardVideo
-              v-for="(video, index) in videos"
+              v-for="(video, index) in videosRelacionados"
               :key="index"
               :video="video"
               height="auto"
@@ -50,11 +53,31 @@ export default {
     return {
       videos: [],
       categorys: [],
+      video: null,
+      ruta: '../assets/videos/'
     };
   },
-  created() {
-    this.videos = store.getters.videos;
-    this.categorys = store.getters.categorys
+  computed: {
+    videosRelacionados() {
+      let videosRelacionados = []
+      if(this.video) {
+        videosRelacionados = store.getters.videos.filter(video => video.idCategory === this.video.idCategory)
+      }
+      return videosRelacionados
+    }
   },
+  created() {
+    this.categorys = store.getters.categorys
+    this.videos = store.getters.videos;
+    if(this.$route.params.id) {
+      this.video = this.videos.find(video => video.id === parseInt(this.$route.params.id, 10))
+      this.video.category = store.getters.getcategoryById(this.video.idCategory)
+    }
+  },
+  methods: {
+    getVideoUrl(src) {
+      return require(src)
+    }
+  }
 };
 </script>

@@ -7,8 +7,10 @@
       <a class="play-icon" href="#">
         <b-icon icon="play-fill"></b-icon>
       </a>
-      <a href="#">
-        <img :src="video.url" width="319px" :height="height"/>
+      <a :href="`/video/${video.id}`">
+        <video class="video" width="319px" :height="height">
+          <source :src="video.src" type="video/mp4">
+        </video>
       </a>
       <div class="time">{{ video.time }}h</div>
     </div>
@@ -54,5 +56,10 @@ export default {
   created() {
     this.category = store.getters.getcategoryById(this.video.idCategory);
   },
+  methods: {
+    getVideoUrl(src) {
+      return require(src)
+    }
+  }
 }
 </script>
