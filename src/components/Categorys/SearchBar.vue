@@ -77,7 +77,7 @@
               @mouseenter="currentSelected = `${grp_index}.${index}`"
               @mousedown.prevent="suggestionSelected(grp_name, suggestion)"
             >
-              <b-link class="p-0 text-decoration-none text-dark">
+              <b-link class="p-0 text-decoration-none">
                 <span class="align-middle">{{ suggestion.title }}</span>
               </b-link>
             </li>
@@ -120,15 +120,17 @@ export default {
 
     const suggestionSelected = (grpName, suggestion) => {
       // If parameter is not provided => Use current selected
-      if (grpName === "videos") router.push({ name: 'video', params: { id: suggestion.id } });
-      // eslint-disable-next-line no-use-before-define
+      if (suggestion) {
+        router.push({ name: 'video', params: { id: suggestion.id } }).catch(()=>{});
+      }
       resetsearchQuery();
       showSearchBar.value = false;
+      // eslint-disable-next-line no-use-before-define
     };
 
     const { searchQuery, resetsearchQuery, filteredData } = useAutoSuggest({
       data: { videos: { key: "title", data: videos } },
-      searchLimit: 4,
+      searchLimit: 10,
     });
 
     watch(searchQuery, (val) => {
@@ -240,15 +242,14 @@ p {
 .search-input {
   .input,
   .search-list .auto-suggestion span {
-    color: var(--dark) !important;
+    color: var(--ligth) !important;
     background: var(--dark);
-
   }
 }
 
 .search-list {
   max-height: 450px;
-  height: auto;
+  height: 300px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -256,7 +257,7 @@ p {
   width: 100%;
   margin-top: 0.5rem;
   padding-left: 0;
-  border-radius: var(--border-radius);
+  // border-radius: var(--border-radius);
   display: none;
   @media only screen and (min-device-width: 320px) and (max-device-width: 875px) and (orientation: landscape) {
     max-height: 250px;
@@ -304,9 +305,151 @@ p {
     }
   }
 }
+
+.search-input {
+  width: 0;
+  float: left;
+  display: none;
+
+  // select
+  input {
+    width: 0;
+    border: none;
+    background: none;
+    transition: all 0.2s ease-out;
+    line-height: 16px;
+    padding: 1.6rem 3.6rem;
+  }
+
+  &.open {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: block;
+    background: var(--dark);
+    // border-radius: 0.5rem;
+
+    .search-input-close,
+    .search-input-icon {
+      display: block;
+    }
+
+    // select
+
+    input {
+      width: 100%;
+      outline: none;
+      background: none;
+      color: var(--ligth);
+      height: auto;
+      box-shadow: none;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  .search-list {
+    max-height: 450px;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--dark);
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-left: 0;
+    // border-radius: var(--border-radius);
+    display: none;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 875px) and (orientation: landscape) {
+      max-height: 250px;
+    }
+
+    &.search-list-bookmark {
+      height: auto !important;
+      i,
+      svg {
+        font-size: 1.2rem;
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+
+    &.show {
+      display: block;
+      min-height: 3rem;
+    }
+
+    li {
+      a {
+        padding: 0.9rem 1rem;
+        color: var(--ligth);
+
+        i,
+        svg[class*='feather feather-'] {
+          height: 1.25rem;
+          width: 1.25rem;
+          font-size: 1.25rem;
+        }
+      }
+
+      &:first-child {
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+      }
+
+      &:last-child {
+        border-bottom-left-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+      }
+
+      &.auto-suggestion {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover,
+        &.current_item {
+          background-color: var(--body-bg);
+        }
+      }
+    }
+  }
+
+  .search-input-icon {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    left: 1.5rem;
+    top: 40%;
+    cursor: pointer;
+
+    i,
+    svg {
+      height: 1.25rem;
+      width: 1.25rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  .search-input-close {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 40%;
+    cursor: pointer;
+
+    i,
+    svg {
+      height: 1.25rem;
+      width: 1.25rem;
+      font-size: 1.25rem;
+    }
+  }
+}
 .suggestion-group-title {
   font-weight: 800;
-  color: var(--dark);
+  color: var(--light);
   padding: 0.75rem 1rem 0.25rem;
 }
 
@@ -314,8 +457,8 @@ p {
   padding: 0.75rem 1rem;
 }
 .suggestion-group-suggestion:hover {
-  background: var(--theme-dark-body-color);
-  color: var(--ligth);
+  background: var(--info);
+  color: var(--dark);
 }
 .suggestion-current-selected {
   background-color: var(--body-bg);

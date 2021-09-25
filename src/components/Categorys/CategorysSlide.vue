@@ -2,7 +2,7 @@
   <div class="top-category section-padding mb-4">
     <div class="row">
       <div class="col-md-12">
-        <h6 class="text-dark">Categorias</h6>
+        <h6 class="text-light">Categorias</h6>
         <div
           class="swiper"
           ref="swiper"

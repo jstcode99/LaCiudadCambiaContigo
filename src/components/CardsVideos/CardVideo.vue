@@ -9,28 +9,20 @@
       </a>
       <a :href="`/video/${video.id}`">
         <video class="video" width="100%" height="100%">
-          <source :src="video.src" type="video/mp4">
+          <source v-if="video.src" :src="video.src" type="video/mp4">
         </video>
       </a>
       <div class="time">{{ video.time }}h</div>
     </div>
     <div class="video-card-body" v-if="!onlyVideo">
       <div class="video-title">
-        <a :href="`link${video.title}`">
+        <a :href="`/video/${video.id}`">
           {{ video.title }}
         </a>
       </div>
-      <div class="video-page text-success">
+      <div class="video-page text-primary" @click="goCategoy">
         {{ this.category.title }}
-        <a
-          :title="video.title"
-          data-placement="top"
-          data-toggle="tooltip"
-          :href="`link${video.title}`"
-          data-original-title="Verified"
-        >
-          <i class="fas fa-check-circle text-success"></i>
-        </a>
+          <b-icon icon="check"></b-icon>
       </div>
       <div class="video-view">
         10.2M Vistas • 1.8M &nbsp;<i class="far fa-heart"></i>
@@ -59,6 +51,12 @@ export default {
   methods: {
     getVideoUrl(src) {
       return require(src)
+    },
+    goVideo() {
+      this.$router.push({ name: 'video', params: { id: this.video.id } }).catch(()=>{});
+    },
+    goCategoy() {
+      this.$router.push({ name: 'home', params: { category: this.video.idCategory } }).catch(()=>{});
     }
   }
 }

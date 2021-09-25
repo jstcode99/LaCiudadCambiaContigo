@@ -1,19 +1,19 @@
 <template>
   <div class="single-video-left">
     <div class="single-video-title box mb-3">
-      <h2 class="text-dark">
+      <h2 class="text-light">
         <strong>{{ video.title }}</strong>
       </h2>
       <p class="mb-0 h6">
         <b-icon
-          class="text-dark"
+          class="text-light"
           size="52"
           icon="eye"
         />
         {{ video.vistas }}
         •
         <b-icon
-          class="text-dark"
+          class="text-light"
           size="52"
           icon="heart"
         />
@@ -23,7 +23,7 @@
     <div class="single-video-author box mb-3">
       <img class="img-fluid" src="img/s4.png" alt="" />
       <p>
-        <strong class="text-dark">{{ video.autor.name }}</strong>
+        <strong class="text-light">{{ video.autor.name }}</strong>
         <span
           title=""
           data-placement="top"
@@ -35,10 +35,10 @@
       <small>Publicado {{ video.date }}</small>
     </div>
     <div class="single-video-info-content box mb-3">
-      <h6 class="text-dark">{{ video.category.title }}</h6>
-      <p>Gaming , PS4 Exclusive , Gameplay , 1080p</p>
-      <h6 class="text-dark">Descripcion</h6>
-      <p>
+      <h6 class="text-light">Categoria</h6>
+      <h6 class="text-primary">{{ video.category.title }}</h6>
+      <h6 class="text-light">Descripcion</h6>
+      <p class="text-light">
         {{ video.description }}
       </p>
       <!-- <h6>Tags :</h6>

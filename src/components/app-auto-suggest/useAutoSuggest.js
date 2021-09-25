@@ -18,14 +18,9 @@ export default function useAutoSuggest(props) {
    */
   const filterGrp = (grp, query) => {
     const exactEle = grp.data.filter(item => {
-      console.log();
-      item[grp.key].toLowerCase().startsWith(query.toLowerCase())
+      return item[grp.key].toLowerCase().includes(query.toLowerCase())
     })
-    const containEle = grp.data.filter(
-      // prettier-ignore
-      item => !item[grp.key].toLowerCase().startsWith(query.toLowerCase()) && item[grp.key].toLowerCase().indexOf(query.toLowerCase()) > -1,
-    )
-    return exactEle.concat(containEle).slice(0, props.searchLimit)
+    return exactEle.slice(0, props.searchLimit)
   }
 
   const searchQuery = ref('')

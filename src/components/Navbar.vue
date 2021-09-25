@@ -2,11 +2,10 @@
   <b-navbar
     toggleable="lg"
     class="navbar-shadow"
-    type="light"
-    variant="light"
+    type="dark"
   >
     <b-navbar-brand to="/">
-      <img :src="require('@/assets/img/logo.png')" height="35px" class="mb-1"/>
+      <img :src="require('@/assets/img/logo.png')" height="55px" class="mb-1"/>
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -44,5 +43,6 @@ export default {
 .navbar-shadow {
   -webkit-box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
   box-shadow: 0 4px 24px 0 rgba(34,41,47,.1);
+  background: #181818 !important;
 }
 </style>

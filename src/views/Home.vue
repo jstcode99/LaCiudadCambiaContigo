@@ -20,8 +20,14 @@ export default {
   },
   data() {
     return {
+      img: require('@/assets/img/parallax.jpg'),
       videos: [],
       categorys: [],
+    }
+  },
+  watch: { 
+    '$route' (to){
+      if(!to.params.category) this.videos = Object.assign({}, store.getters.videos)
     }
   },
   created() {
@@ -29,7 +35,6 @@ export default {
     this.categorys = store.getters.categorys
     if(this.$route.params.category) {
       this.videos = this.videos.filter(video => video.idCategory === parseInt(this.$route.params.category, 10))
-      console.log(this.videos, 'this.videos');
     }
   }
 }

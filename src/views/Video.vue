@@ -19,7 +19,7 @@
           align-self="stretch"
         >
           <div class="video-slider-right-list">
-            <h6 class="m-2 text-dark">Videos relacionado</h6>
+            <h6 class="m-2 text-light">Videos relacionado</h6>
             <CardVideo
               v-for="(video, index) in videosRelacionados"
               :key="index"
@@ -56,6 +56,14 @@ export default {
       video: null,
       ruta: '../assets/videos/'
     };
+  },
+  watch: { 
+    '$route' (to) {
+      if(to.params.id) {
+        console.log('...');
+        this.video = this.videos.find(video => video.id === parseInt(this.$route.params.id, 10))
+      }
+    }
   },
   computed: {
     videosRelacionados() {
