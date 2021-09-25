@@ -1,0 +1,184 @@
+[
+  {
+    "idCategory": 1,
+    "id": 1,
+    "title": "Tu Planeta Tu Casa",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:33",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-07-07 LA CIUDAD CAMBIA CONTIGO SALOME.mp4",
+    "description": "Tu planeta Tu Casa es un proyecto que inicio con Salome, una niña que desde muy pequeña le gustaba el medio ambiente y empezo un proyecto junto a su madre nombrado 'Tu Planeta Tu Casa', actualmente es una fundación que brinda a las personas conciencia ambiental, empezaron un canal de YouTube para incluir a mas personas, el objetivo de la funcación es cambiar el pensamiento de las personas para que cuiden el medio ambiente.",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 2,
+    "id": 2,
+    "title": "Historia de Vida de Luis Octavio Veléz",
+    "vistas": 0,
+    "likes": 0,
+    "time": "3:06",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-07-15 MISTER Luis Vélez.mp4",
+    "description": "Esta es la historia de Luis Octavio Vélez, en la cual nos cuenta que tuvo una infancia muy dificil rodeado de delincuencia, pero que el siempre trato de ser una persona de buen comportamiento, pero la circunstancia de su infancia y juventud no se prestaron para ser la persona que deseaba ser, entonces esto lo conllevo a cometer una serie de errores que lo llevaron a prisión, el se dedicaba a hacerle daño a las personas como robar, apuñaliar personas, cobrar deudas y otras serie de delitos más.                                                                             Hoy en día tiene una barberia y nos cuenta que después de haber vivido una vida tan dificil reflexiono y su barberia (MR. GEORCE) ha sido el escape a esta vida ya que gracias a ella no piensa en cometer delitos contras la sociedad gracias a que la misma le permite vivir comodamente, Luis se siente orgulloso de haber aprendido a vivir de esta forma y el intenta motivar a mas personas al cambio para que dejen de hacer cosas malas contra ellos mismo y la sociedad.",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 3,
+    "id": 3,
+    "title": "Profesora de inglés Amy Becerra",
+    "vistas": 0,
+    "likes": 0,
+    "time": "3:09",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-07-28 CIUDAD CAMBIA CONTIGO AMY PROFE DE INGLES.mp4",
+    "description": "María Del Mar Gil es una estudiante de psicología de cuarto semestre, fue una persona que en su niñez y juventud sufrio mucho Bullying porque era sufria de obesidad, pero un día tomo la decisión de bajar de peso y cuando logro su objetivo empezo a tratar a jovenes con la misma situación que sufrio ella y a partir de esto la impulsaron a crear una funcación en donde le brinda apoyo a los jovenes que sufren del Bullying, además la fundación apoya actividades como deporte, educación y otras actividades que ayuden a los jovenes a crecer y no sean afectados por el Bullying",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 4,
+    "id": 4,
+    "title": "Estudiante de Psícologia contra el Bullying",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:01",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-08-04 LA CIUDAD CAMBIA CONTIGO MARÍA DEL MAR.mp4",
+    "description": "María Del Mar Gil es una estudiante de psicología de cuarto semestre, fue una persona que en su niñez y juventud sufrio mucho Bullying porque era sufria de obesidad, pero un día tomo la decisión de bajar de peso y cuando logro su objetivo empezo a tratar a jovenes con la misma situación que sufrio ella y a partir de esto la impulsaron a crear una funcación en donde le brinda apoyo a los jovenes que sufren del Bullying, además la fundación apoya actividades como deporte, educación y otras actividades que ayuden a los jovenes a crecer y no sean afectados por el Bullying",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 3,
+    "id": 5,
+    "title": "La Ciudad Cambia Contigo",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:21",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-08-11 RESUMEN LA CIUDAD CAMBIA CONTIGO.mp4",
+    "description": "La Ciudad Cambia Contigo, son historias de personas de Villavicencio que brindan un cambio a la ciudad o muestran que si es posible cambiar y convertirse en la mejor versión de uno mismo, son historias que valen la pena contar una y mil veces para ver la buena cara de la ciudad y que cada día la ciudad crece más.",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 2,
+    "id": 6,
+    "title": "Fundación llenandolos de amor.",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:18",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-08-25 LA CIUDAD CAMBIA CONTIGO FUNLLEAMOR.mp4",
+    "description": "Fundación llenandolos de amor.",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 2,
+    "id": 7,
+    "title": "Don Daniel.",
+    "vistas": 0,
+    "likes": 0,
+    "time": "1:45",
+    "date": "Aug 10, 2018",
+    "src":"http://localhost/videos-alcaldia/assets/21-05-20 DON DANIEL.mp4",
+    "description": "En este corto podememos dimensionar las opiniones y las ideas de don daniel pachecho el cual lucha con sus vecinos el poder ayudar a que los jovenes de su barrio y de su comuna elijan el buen camino esto mediante la iniciativa que tiene de ayudar al progimo y de querer ver prosperar su barrio creando espacios de recreacion y de educacion",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+
+  },
+  {
+    "idCategory": 3,
+    "id": 8,
+    "title": "Diana Sarmiento Ubuntu",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:13",
+    "date":"Aug 10, 2018",
+    "src":"http://localhost/videos-alcaldia/assets/21-05-27 DIANA SARMIENTO UBUNTU.mp4",
+    "description": "Historia de Deysi Sarmiento por ayudar al progimo desde su ideologia de poder aportar un granito de arena a la sociedad, podemos tambien observar las ganas de una familia de 7 integrantes en querer salir adelante y poder cumplir con sus objetivos",
+    "autor": {
+      "name":"Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    } 
+
+  },
+  {
+    "idCategory": 1,
+    "id": 9,
+    "title": "Historia Victor Santa Fe",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:43",
+    "date": "Aug 10, 2018",
+    "src":"http://localhost/videos-alcaldia/assets/21-06-01 HISTORIA VICTOR SANTA FÉ.mp4",
+    "description": "Victor tiene como motivación el animo de direccionar los pasos de sus amigos y los habitantes de su barrrio, ayudan a que victor tenga mas fortaleza y ganas de salir adelante ya que su meta principal es salvar a los jovenes y a sus amigos de la calle para que no vuelvan a cometer los mismos errores",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }   
+  },
+  {
+    "idCategory": 1,
+    "id": 10,
+    "title": "Yeison el Papi",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:33",
+    "date": "Aug 10, 2018",
+    "src":"http://localhost/videos-alcaldia/assets/21-06-10 YEISON EL PAPI.mp4",
+    "description": "Yeison el papi lucha con todas las ganas que tiene dia a dia por darle una una mejor calidad de vida y de tiempo a todos sus vecinos y amigos del barrio Brisas del Guatiquia, todos los niños y personas de tercera edad son las personas que motivan a Yeison a gestionar productos y materiales para poderles contruir una sonrisa",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 3,
+    "id": 11,
+    "title": "Wilterman Ariza",
+    "vistas": 0,
+    "likes": 0,
+    "time": "2:38",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-06-17 WILTERMAN ARIZA.mp4",
+    "description": "Wilterman Ariza es director deportivo entregado a su profesion y pasion otorgada por la confianza de los papitos de aquellos jovenes y niños que juegan al futbol, para poder inspirarse a no probar ni un solo minuto la calle la idea principal de este docente del deporte lo lleva a ayudar a todo aquel muchacho que este falta de algun bien para poder entrenar, el gestiona y le soluciona sus guayos o su uniforme porque el deporte es la puerta al futuro de un niño",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar": "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  },
+  {
+    "idCategory": 1,
+    "id": 12,
+    "title": "Historia Don Carlos",
+    "vistas": 0,
+    "likes": 0,
+    "time": "3:40",
+    "date": "Aug 10, 2018",
+    "src": "http://localhost/videos-alcaldia/assets/21-06-22 HISTORIA DON CARLOS.mp4",
+    "description": "Don carlos es un adulto mayor que pese a su edad aun sigue sacando la cara por las personas del barrio santa fe, los habitantes de la calle son como sus amigos y los habitantes de su barrio son como su familia el gesto de Don Carlos es salvar la vida de aquellos habitantes que corren por las drogas, hacer que se rehabiliten y generen mas vida y mas imagen a la sociedad dando a ver que si se lo propone lo podemos lograr",
+    "autor": {
+      "name": "Camilo Aguilera",
+      "avatar":  "http://localhost/videos-alcaldia/assets/49654712.jfif"
+    }
+  }
+]
