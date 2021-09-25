@@ -7,6 +7,11 @@
   con finalidades educativas, el cual propone realizarse en un tiempo estimado de una semana, el proyecto cuanta con las funciones de filtro, busqueda, listamientas y  visualizacion de contenido
 </p>
 
+### Integrantes
+JUAN SEBASTIAN TORRES
+JESIT HERNANDEZ
+SANTIGO CASTILLO
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
