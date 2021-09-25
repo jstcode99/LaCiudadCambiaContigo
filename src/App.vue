@@ -14,15 +14,13 @@
           </div>
         </div>
       </div>
-      <!-- <Footer></Footer> -->
-      <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-      </a>
+      <Footer></Footer>
     </b-overlay>
   </div>
 </template>
 <script>
 
+import Footer from './components/Footer'
 // import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import store from '@/store'
@@ -30,6 +28,7 @@ import store from '@/store'
 export default {
   name: 'App',
     components: {
+    Footer,
     // Footer,
     Navbar,
   },

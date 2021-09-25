@@ -20,7 +20,6 @@ export default {
   },
   data() {
     return {
-      img: require('@/assets/img/parallax.jpg'),
       videos: [],
       categorys: [],
     }

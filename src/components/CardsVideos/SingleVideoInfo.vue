@@ -5,12 +5,8 @@
         <strong>{{ video.title }}</strong>
       </h2>
       <p class="mb-0 h6">
-        <b-icon
-          class="text-light"
-          size="52"
-          icon="eye"
-        />
         {{ video.vistas }}
+        visitas
         •
         <b-icon
           class="text-light"
@@ -21,7 +17,7 @@
       </p>
     </div>
     <div class="single-video-author box mb-3">
-      <img class="img-fluid" src="img/s4.png" alt="" />
+      <img class="img-fluid" :src="video.autor.avatar" alt="" />
       <p>
         <strong class="text-light">{{ video.autor.name }}</strong>
         <span

@@ -38,10 +38,12 @@
 html {
   position: relative;
   min-height: 100%;
+  font-family: var(--font-family-sans-serif) !important;
 }
 body {
   background-color: #fafafa;
   background: var(--dark);
+  font-family: var(--font-family-sans-serif) !important;
   color: #888;
   font-size: 13px;
   height: 100%;
@@ -753,14 +755,6 @@ border-radius: 10px;
 }
 
 /* Footer */
-.app footer img {
-  background: #231f20 none repeat scroll 0 0;
-  border-radius: 3px;
-  height: 38px;
-  margin: 5px 0 0;
-  object-fit: scale-down;
-  padding: 3px 4px;
-}
 
 .footer-list .app img {
  height: 28px;

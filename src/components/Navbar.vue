@@ -3,6 +3,7 @@
     toggleable="lg"
     class="navbar-shadow"
     type="dark"
+    id="page-top"
   >
     <b-navbar-brand to="/">
       <img :src="require('@/assets/img/logo.png')" height="55px" class="mb-1"/>
